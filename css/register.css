@@ -1,0 +1,264 @@
+@font-face {
+    font-family: Amarillo;
+    src: url(../fonts/Amarillo.otf);
+}
+
+@font-face {
+    font-family: England_s;
+    src: url(../fonts/England_s.otf);
+}
+@font-face{
+    font-family: AlexBrush;
+    src: url(../fonts/AlexBrush.ttf);
+}
+
+body {
+    background: url(../images/image_cover.jpg);
+    background-size: cover;
+    font-family: Arial;
+}
+
+.wrap {
+    max-width: 350px;
+    border-radius: 20px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    padding: 40px;
+    color: #fff;
+    margin-top: 80px;
+    background: url(../images/image_cover.jpg);
+}
+
+h2 {
+    text-align: center;
+}
+
+.ifield {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: rgba(0, 0, 0, 0.10);
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted #fff;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    display: block;
+    border-radius: 3px;
+    width: 88%;
+    height: 20px;
+    margin: 12px;
+}
+
+input[type=submit] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    height: auto;
+    border: none;
+    background: #60adde;
+    opacity: 0.7;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+input[type=submit]:hover {
+    background: #003366;
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    height: 88px;
+}
+
+.logo {
+    width: 250px;
+}
+
+.logo a {
+    font-family: Amarillo;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.logo span {
+    font-family: England_s;
+    font-size: 50px;
+    color: mediumspringgreen;
+
+}
+nav ul {
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 20px;
+    font-size: 14px;
+
+}
+
+nav ul li a:hover {
+    color: lightsalmon;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer {
+    display: flex;
+    height: 300px;
+    background-color: #11111150;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, helvetica, sans-serif;
+    color: #fff;
+}
+
+.footer>div {
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+}
+
+.f_section a>img {
+    margin-right: 10px;
+    width: 30px;
+    opacity: 50%;
+}
+
+.f_section a>img:hover {
+    opacity: 100%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.f_section h3 {
+    font-size: 25px;
+    color: mediumaquamarine;
+    margin: 20px 0px;
+    text-align: cenetr;
+}
+
+.f_section h3+p {
+    font-family: AlexBrush;
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+
+.email_news {
+    display: flex;
+    align-items: cenetr;
+}
+
+.f_section input {
+    padding: 10px;
+    background-color: #444;
+    border: none;
+    width: 220px;
+    color: #fff;
+}
+
+.email_news button {
+    width: 50px;
+    height: 35px;
+    background-color: darkcyan;
+    border: none;
+    opacity: 75%;
+}
+
+.email_newsimg {
+    padding: 5px 0px;
+    width: 25px;
+}
+
+.email_news button:hover {
+    opacity: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.info p {
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 32%;
+    margin: 0.5%;
+    height: 70px;
+    object-fit: cover;
+}
+
+footer {
+    border-top: 1px solid mwdiumaqamarine;
+}
+
+footer p {
+    background-color: #11111150;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, helvetica, sans-serif;
+    line-height: 100px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+
+
+    }
+
+    .footer div {
+        width: 80%;
+        margin: 10px;
+        height: auto;
+        padding: 10px;
+
+
+    }
+
+    .footer_icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .f_section h3+p {
+        text-align: center;
+    }
+
+    .email_news input {
+        width: 90%;
+
+
+    }
+
+    .info p {
+        text-align: center;
+    }
+
+}
